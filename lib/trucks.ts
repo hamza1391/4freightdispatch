@@ -241,11 +241,71 @@ export const trucks: Truck[] = [
     blurb:
       "Grace is under a permit from Cheyenne to Dallas. The desk tracks the route, the escorts, and the rate as one job.",
   },
+  {
+    unit: "4F-1620",
+    year: 2022,
+    model: "Hino 268",
+    equipment: "box-truck",
+    equipmentLabel: "Box truck",
+    detail: "26 ft · liftgate · 4 loads",
+    loads: 4,
+    partner: "Andre Williams",
+    base: "Chicago, IL",
+    origin: "Chicago, IL",
+    destination: "Milwaukee, WI",
+    lane: "Chicago → Milwaukee",
+    weeklyGross: 4280,
+    status: "on-load",
+    image: "/images/truck-box.jpg",
+    imageAlt: "White box truck parked on a city street in late-afternoon light",
+    blurb:
+      "Andre runs a 26-foot box with a liftgate out of Chicago. The desk books city and short regional freight around the pallet count and the time he needs to be empty, and he approves the rate before the truck rolls.",
+  },
+  {
+    unit: "4F-1704",
+    year: 2023,
+    model: "Isuzu FTR",
+    equipment: "box-truck",
+    equipmentLabel: "Box truck",
+    detail: "24 ft · liftgate · 5 loads",
+    loads: 5,
+    partner: "Nina Patel",
+    base: "Houston, TX",
+    origin: "Houston, TX",
+    destination: "San Antonio, TX",
+    lane: "Houston → San Antonio",
+    weeklyGross: 3960,
+    status: "available",
+    image: "/images/truck-box.jpg",
+    imageAlt: "White box truck parked on a city street in late-afternoon light",
+    blurb:
+      "Nina keeps a 24-foot box on the Houston to San Antonio run. Stops, liftgate, and the Friday empty are written down before the first broker call. The truck is open for the next load.",
+  },
+  {
+    unit: "4F-1688",
+    year: 2021,
+    model: "Freightliner M2",
+    equipment: "box-truck",
+    equipmentLabel: "Box truck",
+    detail: "26 ft · CDL · 3 loads",
+    loads: 3,
+    partner: "Luis Romero",
+    base: "Atlanta, GA",
+    origin: "Atlanta, GA",
+    destination: "Charlotte, NC",
+    lane: "Atlanta → Charlotte",
+    weeklyGross: 4510,
+    status: "on-load",
+    image: "/images/truck-box.jpg",
+    imageAlt: "White box truck parked on a city street in late-afternoon light",
+    blurb:
+      "Luis runs a CDL 26-foot box between Atlanta and Charlotte. The desk does not offer him semi freight. Length, weight, and dock type are checked before he sees the rate.",
+  },
 ];
 
-export const boardUnits = ["4F-1042", "4F-1108", "4F-0987", "4F-0874", "4F-0761"];
+export const boardUnits = ["4F-1042", "4F-1620", "4F-1108", "4F-0987", "4F-0874", "4F-0761"];
 
-export const carouselUnits = ["4F-1042", "4F-1108", "4F-0987", "4F-0761"];
+export const carouselUnits = ["4F-1042", "4F-1620", "4F-1108", "4F-0987", "4F-0761"];
 
 export function getTruck(unit: string) {
   return trucks.find((truck) => truck.unit.toLowerCase() === unit.toLowerCase());

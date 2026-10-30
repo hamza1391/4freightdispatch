@@ -1,7 +1,7 @@
 export const services = [
   {
     title: "Lane search",
-    body: "We look for freight on the lanes you actually run, with your trailer, your hours, and your home time in the plan.",
+    body: "We look for freight that fits the truck you run, whether that is a 53-foot trailer or a 16- to 26-foot box, with your hours and your home time in the plan.",
   },
   {
     title: "Rate negotiation",
@@ -51,7 +51,7 @@ export const principles = [
 export const steps = [
   {
     title: "Send the authority",
-    body: "MC, insurance, truck, trailer, and the lanes you want. There is no contract to sign and no fee to start. We only dispatch under an active carrier authority.",
+    body: "MC, insurance, and the truck: semi, or a 16-, 20-, 24-, or 26-foot box. There is no contract to sign and no fee to start. We only dispatch under an active carrier authority.",
   },
   {
     title: "Set the week",
@@ -85,6 +85,12 @@ export const quotes = [
       "There was no contract and no bill to start. The weekly sheet matched 8% of my gross. That is the only way I want a desk paid.",
     name: "Amina Diallo",
     detail: "4F-1188 · Dry van · Memphis",
+  },
+  {
+    quote:
+      "I run a 26-foot box out of Chicago. They book around the liftgate and the city I need to finish in. They do not hand me a 53-foot load and call it close enough.",
+    name: "Andre Williams",
+    detail: "4F-1620 · Box truck · Chicago",
   },
 ] as const;
 

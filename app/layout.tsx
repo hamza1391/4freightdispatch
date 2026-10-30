@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s · 4 Freight Dispatch",
   },
   description:
-    "4 Freight Dispatch books freight for owner-operators with no upfront fee, no forced dispatch, and no contract.",
+    "4 Freight Dispatch books freight for semis and box trucks. No upfront fee, no forced dispatch, and no contract.",
 };
 
 export const viewport: Viewport = {
@@ -52,7 +52,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               name: "4 Freight Dispatch",
-              description: "Truck dispatch for owner-operators and small fleets. No upfront fee, no forced dispatch, and no contract.",
+              description: "Truck dispatch for semis and 16- to 26-foot box trucks. No upfront fee, no forced dispatch, and no contract.",
               email: "desk@4freightdispatch.com",
               areaServed: "US",
               priceRange: "6%–8% of gross freight",

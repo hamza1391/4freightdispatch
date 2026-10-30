@@ -15,6 +15,7 @@ export const statusLabel = {
 export const equipmentLabel = {
   all: "All",
   "dry-van": "Dry van",
+  "box-truck": "Box truck",
   reefer: "Reefer",
   flatbed: "Flatbed",
   specialized: "Specialized",

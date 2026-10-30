@@ -8,7 +8,7 @@ import { trucks } from "@/lib/trucks";
 import type { EquipmentFilter, TruckStatus } from "@/lib/types";
 import { useDispatchStore } from "@/store/useDispatchStore";
 
-const filters: EquipmentFilter[] = ["all", "dry-van", "reefer", "flatbed", "specialized"];
+const filters: EquipmentFilter[] = ["all", "dry-van", "box-truck", "reefer", "flatbed", "specialized"];
 
 const statusClass: Record<TruckStatus, string> = {
   "on-load": "bg-emerald-100 text-emerald-800",
@@ -25,7 +25,7 @@ export function FleetExplorer() {
   return (
     <div>
       <div className="flex flex-wrap items-end justify-between gap-4">
-        <div className="flex flex-wrap gap-2" role="toolbar" aria-label="Filter trucks by trailer">
+        <div className="flex flex-wrap gap-2" role="toolbar" aria-label="Filter trucks by equipment">
           {filters.map((filter) => {
             const active = equipment === filter;
             return (
@@ -47,7 +47,7 @@ export function FleetExplorer() {
       </div>
 
       {visible.length === 0 ? (
-        <p className="mt-6 text-muted">No trucks in that trailer group are in the featured twelve. The wider board still covers this equipment.</p>
+        <p className="mt-6 text-muted">No trucks in that group are in the featured set. The wider board still covers this equipment.</p>
       ) : (
         <div className="mt-5 grid gap-3.5 sm:grid-cols-2 xl:grid-cols-3">
           <AnimatePresence mode="popLayout">

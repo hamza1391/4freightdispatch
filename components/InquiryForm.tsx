@@ -19,7 +19,7 @@ export function InquiryForm() {
       `Phone: ${inquiry.phone}`,
       `Email: ${inquiry.email}`,
       `MC: ${inquiry.mc}`,
-      `Trailer: ${inquiry.equipment}`,
+      `Truck: ${inquiry.equipment}`,
       `Lanes: ${inquiry.base}`,
       "",
       inquiry.note,
@@ -56,9 +56,13 @@ export function InquiryForm() {
           <input className={fieldClass} required inputMode="numeric" placeholder="MC-000000" value={inquiry.mc} onChange={(event) => updateInquiry({ mc: event.target.value })} />
         </label>
         <label className="grid gap-1.5 text-sm font-semibold">
-          Trailer
+          Truck
           <select className={fieldClass} required value={inquiry.equipment} onChange={(event) => updateInquiry({ equipment: event.target.value })}>
             <option value="">Select</option>
+            <option>Box truck, 16 ft</option>
+            <option>Box truck, 20 ft</option>
+            <option>Box truck, 24 ft</option>
+            <option>Box truck, 26 ft</option>
             <option>Dry van</option>
             <option>Reefer</option>
             <option>Flatbed</option>

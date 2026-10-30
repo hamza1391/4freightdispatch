@@ -4,7 +4,7 @@ import { Reveal } from "@/components/motion";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Put a truck on the 4 Freight Dispatch board. Send the authority, the trailer, and the lanes.",
+  description: "Put a semi or a box truck on the 4 Freight Dispatch board. Send the authority, the truck, and the lanes.",
 };
 
 const points = [
@@ -25,7 +25,7 @@ export default function ContactPage() {
             Put a truck on the 4 Freight board.
           </h1>
           <p className="mt-5 max-w-xl text-lg text-[#d9d1c3]">
-            Tell us the authority, the trailer, and where the truck needs to be on Friday. There is no upfront fee, no forced dispatch, and no contract. If the lanes fit, we call before a single load is booked.
+            Tell us the authority, whether it is a semi or a 16- to 26-foot box truck, and where it needs to be on Friday. There is no upfront fee, no forced dispatch, and no contract. If the lanes fit, we call before a single load is booked.
           </p>
           <ul className="mt-8">
             {points.map(([label, value]) => (

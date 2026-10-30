@@ -154,7 +154,7 @@ export function RevenueReport() {
           <p className="font-mono text-xs tracking-[0.12em] text-gold uppercase">Standard desk</p>
           <p className="mt-2 font-serif text-5xl tracking-tight">8% <span className="text-3xl">of gross</span></p>
           <p className="mt-3 max-w-xl text-[#d9d1c3]">
-            One truck or a few. The percentage covers search, negotiation, paperwork, load support, and the weekly sheet. No upfront fee, no forced dispatch, and no contract. You can leave when the current loads are delivered.
+            One semi or one box truck, or a few of either. The percentage covers search, negotiation, paperwork, load support, and the weekly sheet. No upfront fee, no forced dispatch, and no contract. You can leave when the current loads are delivered.
           </p>
         </article>
         <article className="rounded-[18px] border border-gold/40 bg-gold/10 p-5">

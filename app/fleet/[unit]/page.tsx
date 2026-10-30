@@ -51,7 +51,7 @@ async function TruckDetail({ params }: TruckPageProps) {
   return (
     <article>
       <div className="relative isolate min-h-[420px] bg-ink text-paper">
-        <Image src={truck.image} alt={truck.imageAlt} fill priority className="object-cover object-left" sizes="100vw" />
+        <Image src={truck.image} alt={truck.imageAlt} fill priority className={`object-cover ${truck.equipment === "box-truck" ? "object-center" : "object-left"}`} sizes="100vw" />
         <div className="absolute inset-0 bg-linear-to-t from-ink via-ink/55 to-ink/10" />
         <div className="relative mx-auto flex min-h-[420px] w-[min(1140px,calc(100%-2.5rem))] flex-col justify-end py-12">
           <p className="font-mono text-xs tracking-[0.14em] text-gold uppercase">{truck.unit}</p>

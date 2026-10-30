@@ -1,4 +1,4 @@
-export type Equipment = "dry-van" | "reefer" | "flatbed" | "specialized";
+export type Equipment = "dry-van" | "box-truck" | "reefer" | "flatbed" | "specialized";
 
 export type EquipmentFilter = "all" | Equipment;
 

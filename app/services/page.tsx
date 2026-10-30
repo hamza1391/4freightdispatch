@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BoxTruckDesk } from "@/components/BoxTruckDesk";
 import { PageIntro } from "@/components/PageIntro";
 import { Lift, Reveal } from "@/components/motion";
 import { services } from "@/lib/site";
@@ -15,7 +16,7 @@ export default function ServicesPage() {
       <PageIntro
         eyebrow="What the desk does"
         title="From the first call to the weekly sheet."
-        lede="Six jobs, done every day the truck is on the board. The percentage pays for the work. There is no upfront fee, no forced dispatch, and no contract."
+        lede="Six jobs, done every day the truck is on the board, for semis and for 16- to 26-foot box trucks. The percentage pays for the work. There is no upfront fee, no forced dispatch, and no contract."
       />
       <section className="py-16">
         <div className="mx-auto grid w-[min(1140px,calc(100%-2.5rem))] gap-x-10 sm:grid-cols-2">
@@ -36,7 +37,7 @@ export default function ServicesPage() {
           <article className="h-full rounded-[18px] bg-ink p-6 text-paper">
             <p className="font-mono text-xs tracking-[0.12em] text-gold uppercase">Standard desk</p>
             <p className="mt-2 font-serif text-5xl">8%</p>
-            <p className="mt-3 text-[#d9d1c3]">One truck or a few. No setup fee and no contract. You can leave the board when the current loads are delivered.</p>
+            <p className="mt-3 text-[#d9d1c3]">One semi or one box truck, or a few of either. No setup fee and no contract. You can leave the board when the current loads are delivered.</p>
           </article>
           </Lift>
           <Lift>
@@ -47,6 +48,7 @@ export default function ServicesPage() {
           </article>
           </Lift>
         </div>
+        <BoxTruckDesk />
         <p className="mx-auto mt-8 w-[min(1140px,calc(100%-2.5rem))]">
           <Link href="/contact" className="inline-flex min-h-12 items-center rounded-full bg-ink px-5 text-paper no-underline">
             Put a truck on the board

@@ -28,7 +28,7 @@ export default function AboutPage() {
               We work with carriers who are tired of a dispatcher grabbing the first load that fills a hole. 4 Freight searches the lane, calls the broker, and sends the rate only when the miles, the appointments, and the money make sense for that truck.
             </p>
             <p>
-              The carriers on our board are owner-operators and small fleets. The truck stays in their name. The authority stays theirs. We do not lease the equipment, we do not take a cut of the fuel card, and we do not charge anything before the first load. Our revenue is a written percentage of gross freight.
+              The carriers on our board are owner-operators and small fleets, running semis and 16- to 26-foot box trucks. The truck stays in their name. The authority stays theirs. We do not lease the equipment, we do not take a cut of the fuel card, and we do not charge anything before the first load. Our revenue is a written percentage of gross freight.
             </p>
             <p>
               Gross freight booked for those carriers reached $11,573,000. 4 Freight Dispatch revenue on the standard fee was $925,840.

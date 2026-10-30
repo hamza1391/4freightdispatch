@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Hero } from "@/components/Hero";
 import { PromiseBoard } from "@/components/PromiseBoard";
 import { Lift, Reveal } from "@/components/motion";
+import { BoxTruckDesk } from "@/components/BoxTruckDesk";
 import { TruckCarousel } from "@/components/TruckCarousel";
 import { money } from "@/lib/format";
 import { kpis } from "@/lib/revenue";
@@ -32,6 +33,7 @@ export default function HomePage() {
         </div>
       </section>
       <TruckCarousel />
+      <BoxTruckDesk />
       <section className="py-8 pb-20">
         <Reveal>
         <div className="mx-auto grid w-[min(1140px,calc(100%-2.5rem))] gap-10 lg:grid-cols-[0.9fr_1.1fr]">
@@ -99,7 +101,7 @@ export default function HomePage() {
       <section className="py-20">
         <div className="mx-auto w-[min(1140px,calc(100%-2.5rem))]">
           <h2 className="font-serif text-[clamp(2.2rem,4vw,3.2rem)] leading-none tracking-tight">What the partners notice.</h2>
-          <div className="mt-8 grid gap-3.5 lg:grid-cols-3">
+          <div className="mt-8 grid gap-3.5 sm:grid-cols-2">
             {quotes.map((quote, index) => (
               <Reveal key={quote.name} delay={index * 0.08}>
                 <Lift className="h-full">

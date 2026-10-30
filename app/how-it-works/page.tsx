@@ -33,7 +33,7 @@ export default function HowItWorksPage() {
       <section className="pb-20">
         <div className="mx-auto w-[min(1140px,calc(100%-2.5rem))]">
           <h2 className="font-serif text-4xl tracking-tight">From the board</h2>
-          <div className="mt-8 grid gap-3.5 lg:grid-cols-3">
+          <div className="mt-8 grid gap-3.5 sm:grid-cols-2">
             {quotes.map((quote, index) => (
               <Reveal key={quote.name} delay={index * 0.08}>
                 <Lift className="h-full">

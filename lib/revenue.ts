@@ -15,7 +15,8 @@ export const yearFreight = months.reduce((sum, month) => sum + month.freight, 0)
 export const yearFee = months.reduce((sum, month) => sum + month.fee, 0);
 
 export const equipmentMix = [
-  { label: "Dry van", share: 44, amount: 681_120 },
+  { label: "Dry van", share: 36, amount: 557_280 },
+  { label: "Box truck", share: 8, amount: 123_840 },
   { label: "Reefer", share: 27, amount: 417_960 },
   { label: "Flatbed", share: 19, amount: 294_120 },
   { label: "Specialized", share: 10, amount: 154_800 },
@@ -23,11 +24,12 @@ export const equipmentMix = [
 
 export const laneGroups = [
   { label: "Texas triangle", trucks: 9, gross: 67_500 },
-  { label: "Midwest to East Coast", trucks: 11, gross: 79_200 },
+  { label: "Midwest to East Coast", trucks: 8, gross: 57_600 },
   { label: "California reefer", trucks: 7, gross: 56_000 },
-  { label: "Southeast regional", trucks: 8, gross: 56_000 },
+  { label: "Southeast regional", trucks: 5, gross: 35_000 },
   { label: "Mountain and heavy haul", trucks: 5, gross: 42_500 },
   { label: "South Central flatbed", trucks: 8, gross: 56_400 },
+  { label: "Box truck, city and regional", trucks: 6, gross: 42_600 },
 ] as const;
 
 export const kpis = [

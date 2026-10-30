@@ -48,7 +48,7 @@ export function Hero() {
           </Rise>
           <Rise delay={0.22}>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#d9d1c3]">
-            4 Freight Dispatch finds freight and negotiates the rate for owner-operators and small fleets. You keep the truck and the authority. There is no upfront fee, no forced dispatch, and no contract.
+            4 Freight Dispatch finds freight and negotiates the rate for owner-operators and small fleets, semis and box trucks. You keep the truck and the authority. There is no upfront fee, no forced dispatch, and no contract.
           </p>
           </Rise>
           <Rise delay={0.32}>

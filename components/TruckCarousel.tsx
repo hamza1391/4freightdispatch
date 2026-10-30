@@ -60,7 +60,7 @@ export function TruckCarousel() {
                   src={truck.image}
                   alt={truck.imageAlt}
                   fill
-                  className="object-cover object-left"
+                  className={`object-cover ${truck.equipment === "box-truck" ? "object-center" : "object-left"}`}
                   sizes="(min-width: 1140px) 1140px, 100vw"
                   priority={index === 0}
                 />
@@ -119,7 +119,7 @@ export function TruckCarousel() {
           </div>
         </div>
 
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
           {slides.map((item, itemIndex) => (
             <button
               key={item.unit}
@@ -130,7 +130,7 @@ export function TruckCarousel() {
               className={`overflow-hidden rounded-2xl border text-left ${itemIndex === index ? "border-gold-deep" : "border-ink/10"}`}
             >
               <span className="relative block aspect-video">
-                <Image src={item.image} alt="" fill className="object-cover object-left" sizes="280px" />
+                <Image src={item.image} alt="" fill className={`object-cover ${item.equipment === "box-truck" ? "object-center" : "object-left"}`} sizes="280px" />
               </span>
               <span className="block px-3 py-2">
                 <span className="block font-mono text-xs">{item.unit}</span>

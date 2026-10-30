@@ -4,7 +4,7 @@ import { PageIntro } from "@/components/PageIntro";
 
 export const metadata: Metadata = {
   title: "Trucks",
-  description: "Twelve of the 48 trucks dispatched by 4 Freight, with lanes, status, and last week’s gross.",
+  description: "Trucks dispatched by 4 Freight, including 16- to 26-foot box trucks, with lanes, status, and last week’s gross.",
 };
 
 export default function FleetPage() {
@@ -12,8 +12,8 @@ export default function FleetPage() {
     <>
       <PageIntro
         eyebrow="Trucks working with us"
-        title="Twelve partners on a 48-truck board."
-        lede="These are active trucks dispatched by 4 Freight. Gross figures are the carrier’s last full week, before fuel and operating costs. The other 36 trucks are on regional and dedicated lanes with the same desk."
+        title="Partners on a 48-truck board."
+        lede="These are active trucks dispatched by 4 Freight, including 16- to 26-foot box trucks. Gross figures are the carrier’s last full week, before fuel and operating costs. The rest of the board is on regional and dedicated lanes with the same desk."
       />
       <section className="py-12">
         <div className="mx-auto w-[min(1140px,calc(100%-2.5rem))]">
